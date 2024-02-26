@@ -25,7 +25,7 @@ MathJax.Hub.Config({
 <div class="menu-item"><a href="index.html">Main</a></div>
 <div class="menu-category">Research</div>
 <div class="menu-item"><a href="index.html#papers">Publications</a></div>
-<div class="menu-item"><a href="code_data.html">Code & data</a></div>
+<div class="menu-item"><a href="code_data.html">Code&nbsp;&amp;&nbsp;data</a></div>
 <div class="menu-category">Experience</div>
 <div class="menu-item"><a href="index.html#working">Working</a></div>
 <div class="menu-item"><a href="index.html#teaching">Teaching</a></div>
@@ -80,12 +80,16 @@ MathJax.Hub.Config({
 <div id="toptitle">
 <h1>Co-authorship network with ground truth (for overlapping community detection)</h1>
 </div>
-<p>We construct co-authorship networks from <a href="http://dblp.uni-trier.de/xml/" target=&ldquo;blank&rdquo;>DBLP</a>, and <a href="https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/" target=&ldquo;blank&rdquo;>Microsoft Academic Graph</a> (MAG). Please see our <a href="https://arxiv.org/pdf/1607.00084.pdf" target=&ldquo;blank&rdquo;>paper</a> for the citations to these two datasets. </p>
+<p>We construct co-authorship networks from <a href="http://dblp.uni-trier.de/xml/" target=&ldquo;blank&rdquo;>DBLP</a>, and <a href="https://www.microsoft.com/en-us/research/project/microsoft-academic-graph/" target=&ldquo;blank&rdquo;>Microsoft Academic Graph</a> (MAG). Please see our <a href="https://arxiv.org/pdf/1607.00084.pdf" target=&ldquo;blank&rdquo;>paper</a> for the citations to these two datasets. 
+</p>
 <p>For DBLP, each community is a group of conferences; for MAG, each community is denoted by a &lsquo;&lsquo;field of study&rsquo;&rsquo; (FOS) tag.
-Each author’s ground truth community distribution (\(\mathbf{\theta}\) vector) is constructed by normalizing the number of papers he/she has published in conferences in a subfield (or papers that have the FOS tag). Please read our <a href="https://arxiv.org/pdf/1607.00084.pdf" target=&ldquo;blank&rdquo;>paper</a> for details.</p>
-<p>We also construct bipartite version of the DBLP networks, where each node can either be an author or a paper, and the edges are between authors and papers. Please read our <a href="https://arxiv.org/pdf/1709.00407.pdf" target=&ldquo;blank&rdquo;>paper</a> for details.</p>
+Each author’s ground truth community distribution (\(\mathbf{\theta}\) vector) is constructed by normalizing the number of papers he/she has published in conferences in a subfield (or papers that have the FOS tag). Please read our <a href="https://arxiv.org/pdf/1607.00084.pdf" target=&ldquo;blank&rdquo;>paper</a> for details.
+</p>
+<p>We also construct bipartite version of the DBLP networks, where each node can either be an author or a paper, and the edges are between authors and papers. Please read our <a href="https://arxiv.org/pdf/1709.00407.pdf" target=&ldquo;blank&rdquo;>paper</a> for details.
+</p>
 <h2>Community Structure for Different Networks</h2>
-<p>DBLP1 has 6 communities as:</p>
+<p>DBLP1 has 6 communities as:
+</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 - Machine Learning: NIPS, ICML, AISTATS, UAI
@@ -95,28 +99,32 @@ Each author’s ground truth community distribution (\(\mathbf{\theta}\) vector)
 - Artificial Intelligence: AAAI, IJCAI
 - Natural Language Processing: ACL, NAACL, EMNLP, CONLL, COLING, EACL, SIGIR
 </pre></div></div>
-<p>DBLP2 has 3 communities as:</p>
+<p>DBLP2 has 3 communities as:
+</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 - Networking and Communications: INFOCOM, GLOBECOM, ICC
 - Systems: OSDI, SOSP, NSDI, SIGCOMM, MOBICOM, MOBISYS, CONEXT, ATC
 - Information Theory: ISIT, ITA, SIGMETRICS, MOBIHOC
 </pre></div></div>
-<p>DBLP3 has 3 communities as:</p>
+<p>DBLP3 has 3 communities as:
+</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 - Databases: VLDB, SIGMOD, PODS, CIKM, ICDE
 - Data Mining: KDD, ICDM, SDM, SIGIR
 - World Web Wide: WWW, WSDM, WINE, ICWSM
 </pre></div></div>
-<p>DBLP4 has 3 communities as:</p>
+<p>DBLP4 has 3 communities as:
+</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 - Programming Languages: PLDI, POPL, OOPSLA, ICLP, ESOP, ICFP
 - Software Engineering: FSE, ICSE, ASE/KBSE
 - Formal Methods: CAV, FM, SAS, FMSD, IFM, ICFEM, FORTE, CADE, TABLEAUX, LPAR
 </pre></div></div>
-<p>DBLP5 has 4 communities as:</p>
+<p>DBLP5 has 4 communities as:
+</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 - Computer Architecture: ASPLOS, ISCA, MICRO, HPCA
@@ -124,14 +132,16 @@ Each author’s ground truth community distribution (\(\mathbf{\theta}\) vector)
 - Real-time and Embedded Systems: RTSS, RTAS, ECRTS, MODELS, LCTRTS, CASES, EMSOFT, SCOPES
 - Computeraided Design: DAC, ICCAD, DATE, ASPDAC
 </pre></div></div>
-<p>MAG1 has 3 communities as:</p>
+<p>MAG1 has 3 communities as:
+</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 - Computational Biology and Bioinformatics
 - Organic Chemistry
 - Genetics
 </pre></div></div>
-<p>MAG2 has 3 communities as:</p>
+<p>MAG2 has 3 communities as:
+</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 - Machine Learning
@@ -139,62 +149,85 @@ Each author’s ground truth community distribution (\(\mathbf{\theta}\) vector)
 - Mathematical Optimization
 </pre></div></div>
 <h2>Data Format</h2>
-<p>For each network, there are two txt files:</p>
+<p>For each network, there are two txt files:
+</p>
 <div class="infoblock">
 <div class="blockcontent">
-<p>Adjacency Matrix \(\mathbf{A}\in\mathbb{R}^{n\times n}\):</p>
+<p>Adjacency Matrix \(\mathbf{A}\in\mathbb{R}^{n\times n}\):
+</p>
 <ul>
-<li><p>each row of the txt file is &lsquo;&lsquo;Node_ID_1 Node_ID_2&rsquo;&rsquo;, representing an edge between Node_ID_1 and Node_ID_2</p>
+<li><p>each row of the txt file is &lsquo;&lsquo;Node_ID_1 Node_ID_2&rsquo;&rsquo;, representing an edge between Node_ID_1 and Node_ID_2
+</p>
 </li>
 </ul>
-<p>Community Groud Truth \(\mathbf{\Theta}\in\mathbb{R}^{n\times K}\): </p>
+<p>Community Groud Truth \(\mathbf{\Theta}\in\mathbb{R}^{n\times K}\): 
+</p>
 <ul>
-<li><p>Sparse Matrix Format, each row of the txt file is &lsquo;&lsquo;Row_\(i\) Column_\(j\) Value_\(\mathbf{\Theta}_{ij}\)&rsquo;&rsquo;</p>
+<li><p>Sparse Matrix Format, each row of the txt file is &lsquo;&lsquo;Row_\(i\) Column_\(j\) Value_\(\mathbf{\Theta}_{ij}\)&rsquo;&rsquo;
+</p>
 </li>
 </ul>
 </div></div>
 <h2>Download</h2>
-<p>The data can be downloaded from <a href="data/coauthorship/coauthorship.zip" target=&ldquo;blank&rdquo;>here</a>. The bipartite version of DBLP networks can be downloaded from <a href="data/coauthorship/DBLP_bipartite.zip" target=&ldquo;blank&rdquo;>here</a>.</p>
-<p>Seperate files:</p>
+<p>The data can be downloaded from <a href="data/coauthorship/coauthorship.zip" target=&ldquo;blank&rdquo;>here</a>. The bipartite version of DBLP networks can be downloaded from <a href="data/coauthorship/DBLP_bipartite.zip" target=&ldquo;blank&rdquo;>here</a>.
+</p>
+<p>Seperate files:
+</p>
 <div class="infoblock">
 <div class="blockcontent">
 <ul>
-<li><p>DBLP1: <a href="data/coauthorship/DBLP1_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP1_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP1: <a href="data/coauthorship/DBLP1_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP1_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP2: <a href="data/coauthorship/DBLP2_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP2_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP2: <a href="data/coauthorship/DBLP2_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP2_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP3: <a href="data/coauthorship/DBLP3_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP3_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP3: <a href="data/coauthorship/DBLP3_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP3_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP4: <a href="data/coauthorship/DBLP4_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP4_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP4: <a href="data/coauthorship/DBLP4_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP4_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP5: <a href="data/coauthorship/DBLP5_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP5_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP5: <a href="data/coauthorship/DBLP5_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP5_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>MAG1: &nbsp;<a href="data/coauthorship/MAG1_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/MAG1_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>MAG1: &nbsp;<a href="data/coauthorship/MAG1_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/MAG1_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>MAG2: &nbsp;<a href="data/coauthorship/MAG2_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/MAG2_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>MAG2: &nbsp;<a href="data/coauthorship/MAG2_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/MAG2_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP1_bipartite: <a href="data/coauthorship/DBLP1_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP1_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP1_bipartite: <a href="data/coauthorship/DBLP1_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP1_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP2_bipartite: <a href="data/coauthorship/DBLP2_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP2_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP2_bipartite: <a href="data/coauthorship/DBLP2_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP2_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP3_bipartite: <a href="data/coauthorship/DBLP3_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP3_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP3_bipartite: <a href="data/coauthorship/DBLP3_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP3_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP4_bipartite: <a href="data/coauthorship/DBLP4_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP4_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP4_bipartite: <a href="data/coauthorship/DBLP4_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP4_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
-<li><p>DBLP5_bipartite: <a href="data/coauthorship/DBLP5_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP5_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a></p>
+<li><p>DBLP5_bipartite: <a href="data/coauthorship/DBLP5_bipartite_adjacency.txt" target=&ldquo;blank&rdquo;>[Adjacency Matrix]</a> <a href="data/coauthorship/DBLP5_bipartite_community.txt" target=&ldquo;blank&rdquo;>[Community Matrix]</a>
+</p>
 </li>
 </ul>
 </div></div>
 <h2>Code</h2>
 <ul>
-<li><p>The matlab implementation of GeoNMF in our <a href="https://arxiv.org/pdf/1607.00084.pdf" target=&ldquo;blank&rdquo;>paper</a> can be downloaded from <a href="code/GeoNMF.zip" target=&ldquo;blank&rdquo;>here</a>. </p>
+<li><p>The matlab implementation of GeoNMF in our <a href="https://arxiv.org/pdf/1607.00084.pdf" target=&ldquo;blank&rdquo;>paper</a> can be downloaded from <a href="code/GeoNMF.zip" target=&ldquo;blank&rdquo;>here</a>. 
+</p>
 </li>
-<li><p>The matlab implementation of SPACL in our <a href="https://arxiv.org/pdf/1709.00407.pdf" target=&ldquo;blank&rdquo;>paper</a> can be downloaded from <a href="code/SPACL.zip" target=&ldquo;blank&rdquo;>here</a>.</p>
+<li><p>The matlab implementation of SPACL in our <a href="https://arxiv.org/pdf/1709.00407.pdf" target=&ldquo;blank&rdquo;>paper</a> can be downloaded from <a href="code/SPACL.zip" target=&ldquo;blank&rdquo;>here</a>.
+</p>
 </li>
 </ul>
 <h2>Citation</h2>
-<p>Xueyu Mao, Purnamrita Sarkar, and Deepayan Chakrabart, &lsquo;&lsquo;On Mixed Memberships and Symmetric Nonnegative Matrix Factorizations&rsquo;&rsquo;, in Proceedings of the 34th International Conference on Machine Learning, PMLR 70:2324-2333, 2017. <a href="BibTeX/pmlr-v70-mao17a.bib" target=&ldquo;blank&rdquo;>[BibTeX]</a></p>
-<p>Xueyu Mao, Purnamrita Sarkar, and Deepayan Chakrabart, &lsquo;&lsquo;Estimating Mixed Memberships with Sharp Eigenvector Deviations&rsquo;&rsquo;, Journal of the American Statistical Association, DOI: 10.1080/01621459.2020.1751645 <a href="BibTeX/tandf_uasa20AxA_1.bib" target=&ldquo;blank&rdquo;>[BibTeX]</a></p>
+<p>Xueyu Mao, Purnamrita Sarkar, and Deepayan Chakrabart, &lsquo;&lsquo;On Mixed Memberships and Symmetric Nonnegative Matrix Factorizations&rsquo;&rsquo;, in Proceedings of the 34th International Conference on Machine Learning, PMLR 70:2324-2333, 2017. <a href="BibTeX/pmlr-v70-mao17a.bib" target=&ldquo;blank&rdquo;>[BibTeX]</a>
+</p>
+<p>Xueyu Mao, Purnamrita Sarkar, and Deepayan Chakrabart, &lsquo;&lsquo;Estimating Mixed Memberships with Sharp Eigenvector Deviations&rsquo;&rsquo;, Journal of the American Statistical Association, DOI: 10.1080/01621459.2020.1751645 <a href="BibTeX/tandf_uasa20AxA_1.bib" target=&ldquo;blank&rdquo;>[BibTeX]</a>
+</p>
 </td>
 </tr>
 </table>
